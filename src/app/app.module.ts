@@ -3,18 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ItemsListComponent } from './pages/items-list/items-list.component';
-import { ItemsShowComponent } from './pages/items-show/items-show.component';
-import { ItemNewComponent } from './pages/item-new/items-new.component';
-import { ItemsEditComponent } from './pages/item-edit/items-edit.component';
+import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
+import { ToDoShowComponent } from './pages/to-do-show/to-do-show.component';
+import { ToDoNewComponent } from './pages/to-do-new/to-do-new.component';
+import { ToDoEditComponent } from './pages/to-do-edit/to-do-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsListComponent,
-    ItemsShowComponent,
-    ItemNewComponent,
-    ItemsEditComponent
+    ToDoListComponent,
+    ToDoShowComponent,
+    ToDoNewComponent,
+    ToDoEditComponent
   ],
   imports: [
     BrowserModule,

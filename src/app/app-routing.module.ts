@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ItemsEditComponent } from './pages/item-edit/items-edit.component';
-import { ItemsListComponent } from './pages/items-list/items-list.component';
-import { ItemsShowComponent } from './pages/items-show/items-show.component';
+import { ToDoEditComponent } from './pages/to-do-edit/to-do-edit.component';
+import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
+import { ToDoShowComponent } from './pages/to-do-show/to-do-show.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/items', pathMatch: 'full' },
-  { path: 'items', component: ItemsListComponent },
-  { path: 'items/new', component: ItemsShowComponent },
-  { path: 'items/:id/edit', component: ItemsEditComponent },
-  { path: 'items/:id', component: ItemsShowComponent },
+  { path: '',   redirectTo: '/to-do', pathMatch: 'full' },
+  { path: 'to-do', component: ToDoListComponent },
+  { path: 'to-do/new', component: ToDoShowComponent },
+  { path: 'to-do/:id/edit', component: ToDoEditComponent },
+  { path: 'to-do/:id', component: ToDoShowComponent },
 ];
 
 @NgModule({
