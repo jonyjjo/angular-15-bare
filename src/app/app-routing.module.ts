@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '',   redirectTo: '/to-do', pathMatch: 'full' },
   { path: 'to-do', component: ToDoListComponent },
   { path: 'to-do/new', component: ToDoShowComponent },
-  { path: 'to-do/:id/edit', component: ToDoEditComponent },
+  { path: 'to-do/edit/:id', component: ToDoEditComponent },
   { path: 'to-do/:id', component: ToDoShowComponent },
 ];
 

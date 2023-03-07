@@ -1,7 +1,7 @@
-<p>items-show works!</p>
+<h2>items-show works!</h2>
 
 <p>
-    <a href=""></a>
+    <a [routerLink]="['/to-do']">Items List</a>
 </p>
 
 <div *ngIf="toDo">
@@ -9,4 +9,8 @@
     <p><strong>name:</strong> {{ toDo.name }}</p>
     <p><strong>description:</strong> {{ toDo.description }}</p>
     <p><strong>label:</strong> {{ toDo.isDone }}</p>
+    <p>
+        <a [routerLink]="['/to-do/edit', toDo.id]">Edit</a>
+        <a (click)="delete(toDo.id)">&nbsp;Delete</a>
+    </p>
 </div>

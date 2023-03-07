@@ -1,7 +1,9 @@
-<p>items-list works!</p>
+<h2>items-list works!</h2>
 
 <ul>
     <li *ngFor="let toDo of toDos">
-        <a [routerLink]="['/to-do', toDo.id]">{{ toDo.name }}</a>
+        <p>
+            <a [routerLink]="['/to-do', toDo.id]">{{ toDo.name }}</a>
+        </p>
     </li>
 </ul>

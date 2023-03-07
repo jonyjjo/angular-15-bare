@@ -1,1 +1,26 @@
-<p>items-edit works!</p>
+<h2>items-edit works!</h2>
+
+<p>
+    <a [routerLink]="['/to-do']">Items List</a>
+</p>
+
+<p>toDo: {{ toDo | json }}</p>
+
+<form *ngIf="toDo" [formGroup]="toDoFormGroup">
+    <p>
+        <label>Name:</label>
+        <input type="text" formControlName="name">
+    </p>
+    <p>
+        <label>Description:</label>
+        <input type="text" formControlName="description">
+    </p>
+    <p>
+        <label>isDone:</label>
+        <input type="checkbox" formControlName="isDone">
+    </p>
+    <p>
+        <a [routerLink]="['/to-do', toDo.id]">Cancel</a>
+        <a (click)="save()">&nbsp;Save</a>
+    </p>
+</form>

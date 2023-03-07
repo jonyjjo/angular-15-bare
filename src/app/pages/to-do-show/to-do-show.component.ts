@@ -24,4 +24,8 @@ export class ToDoShowComponent {
       this.toDo = this.toDoService.getToDo(toDoId);
     }
   }
+
+  public delete(id: string): void {
+    console.log("WIP: Delete ToDo...", id);
+  }
 }

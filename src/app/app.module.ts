@@ -8,6 +8,8 @@ import { ToDoShowComponent } from './pages/to-do-show/to-do-show.component';
 import { ToDoNewComponent } from './pages/to-do-new/to-do-new.component';
 import { ToDoEditComponent } from './pages/to-do-edit/to-do-edit.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { ToDoEditComponent } from './pages/to-do-edit/to-do-edit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
