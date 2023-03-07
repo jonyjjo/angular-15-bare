@@ -9,6 +9,7 @@ import { ToDoNewComponent } from './pages/to-do-new/to-do-new.component';
 import { ToDoEditComponent } from './pages/to-do-edit/to-do-edit.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { Directive1Directive } from './directive-1.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ToDoListComponent,
     ToDoShowComponent,
     ToDoNewComponent,
-    ToDoEditComponent
+    ToDoEditComponent,
+    Directive1Directive
   ],
   imports: [
     BrowserModule,
