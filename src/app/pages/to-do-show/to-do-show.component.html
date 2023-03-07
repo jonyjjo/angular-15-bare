@@ -11,6 +11,6 @@
     <p><strong>label:</strong> {{ toDo.isDone }}</p>
     <p>
         <a [routerLink]="['/to-do/edit', toDo.id]">Edit</a>
-        <a (click)="delete(toDo.id)">&nbsp;Delete</a>
+        <button (click)="delete(toDo.id)">Delete</button>
     </p>
 </div>
